@@ -45,6 +45,7 @@
 	var notificationTimeout = 5; // in seconds
 	var d2url = 'http://d2modd.in';
 	var inLobby = false;
+	var readyState = false;
 	var sounds = {
 		'badNews': 'sounds/bad-news.mp3',
 		'ready': 'sounds/ready.mp3',
@@ -141,12 +142,18 @@
 					data.content = chrome.i18n.getMessage('badNewsInListMore');
 
 					inLobby = false;
+					readyState = false;
 				break;
 
 				case 'connecting':
+					if (readyState) {
+						doshow = false;
+					}
 					data.eventKey = 'ready';
 					data.title = chrome.i18n.getMessage('getReady');
 					data.content = chrome.i18n.getMessage('getReadyMore');
+
+					readyState = true;
 				break;
 				default:
 					doshow = false;
