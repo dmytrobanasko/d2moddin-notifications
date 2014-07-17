@@ -1,0 +1,42 @@
+{
+	"appName": {
+		"message": "D2Moddin Lobby Notifications",
+		"description": "The name of the application"
+	},
+	"appDescription": {
+		"message": "Show your lobby status notifications",
+		"description": "The description of the application"
+	},
+	"okInLobby": {
+		"message": "Relax, you are doing fine",
+		"description": "After join lobby"
+	},
+	"okInLobbyMore": {
+		"message": "Wait for other players",
+		"description": "After join lobby more"
+	},
+	"badNewsInList": {
+		"message": "Bad news for you",
+		"description": "You are kicked"
+	},
+	"badNewsInListMore": {
+		"message": "Looks like you are kicked",
+		"description": "You are kicked more"
+	},
+	"getReady": {
+		"message": "Get ready for battle",
+		"description": "Prepare to the fight"
+	},
+	"getReadyMore": {
+		"message": "You are connecting now",
+		"description": "Prepare to the fight more"
+	},
+	"Ooops": {
+		"message": "Ooops",
+		"description": "Something went wrong"
+	},
+	"OoopsMore": {
+		"message": "Unknown error occurs",
+		"description": "Something went wrong more"
+	}
+}
